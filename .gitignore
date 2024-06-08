@@ -1,0 +1,12 @@
+**/_bin/*
+**/logs/*
+**/bash/*
+**/downloads/*
+**/test/*
+**/.vscode
+**/__pycache__
+**/.DS_Store
+**/test_*.py
+**/_bin/config.ini
+**/.personalnotes.txt
+**/cache/*
