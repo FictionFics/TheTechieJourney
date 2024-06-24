@@ -4,6 +4,8 @@
 In this repo you will find some interesting service to be deployed and probably it will be changing with the time, it is all based on my homelab and I want to share everything that I learn with everyone that needed.
 
 If you would like to continue learning as me, I recommend that first you build your own proxmox server, this will open to you a new world of experimenting and testing environments. The most intereting thing of this is.... You can destroy everything as much as you want!!!
+
+
 ![](https://github.com/FictionFics/TheTechieJourney/blob/main/funnygifs/giphy2.gif)
 
 There are a lot of videos on youtube about how to build your own proxmox server, but you will need for sure:
@@ -13,4 +15,6 @@ There are a lot of videos on youtube about how to build your own proxmox server,
 At the moment all the deployments that I have are in simple linux vm with docker installed and running, this is how you can easily start deploying service and be amazed about the magic of this world.
 
 Good Luck on your new Techie Journey and let me know if you want to contact me.
+
+
 ![](https://github.com/FictionFics/TheTechieJourney/blob/main/funnygifs/giphy.gif)
