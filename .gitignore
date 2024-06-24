@@ -8,5 +8,5 @@
 **/.DS_Store
 **/test_*.py
 **/_bin/config.ini
-**/.personalnotes.txt
+**/nottogit/*
 **/cache/*
