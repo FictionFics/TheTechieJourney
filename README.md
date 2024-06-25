@@ -4,7 +4,7 @@
 ### Welcome to the TechieJourney repo! 
 In this repo you will find some interesting service to be deployed and probably it will be changing with the time, it is all based on my homelab and I want to share everything that I learn with everyone that needed.
 
-If you would like to continue learning as me, I recommend that first you build your own proxmox server, this will open to you a new world of experimenting and testing environments. The most intereting thing of this is.... You can destroy everything as much as you want!!!
+If you would like to continue learning as me, I recommend that first you build your own proxmox server, this will open to you a new world of experimenting and testing environments. The most interesting thing of proxmox is.... You can destroy everything as much as you want!!!
 
 
 ![](https://github.com/FictionFics/TheTechieJourney/blob/main/funnygifs/giphy2.gif)
