@@ -4,7 +4,7 @@ services:
   backup:
     image: mazzolino/restic
     container_name: restic
-    hostname: your_host_name
+    hostname: Portainer
     environment:
       RUN_ON_STARTUP: "true" #change as you wish
       BACKUP_CRON: "0 */12 * * *" #this is twice daily, i.e., every 12 hours
@@ -20,10 +20,10 @@ services:
         --keep-daily 7
         --keep-weekly 5
         --keep-monthly 12
-      TZ: Europe/London
+      TZ: Europe/Madrid
     volumes:
-      - /home/ubuntu/truenas/Restic-Proxmox-Backup:/restic #change the left hand side to where you want to store the backups. As you can see I'm storing it on my NAS that is mounted to the host /home/truenas
-      - /home/ubuntu/truenas/Restic-Proxmox-Backup/tmp-for-restore:/tmp-for-restore #USE THIS FOLDER FOR RESTORE - CAN VIEW EACH CONTAINER
+      - /home/fica/truenas/Restic-Proxmox-Backup:/restic #change the left hand side to where you want to store the backups. As you can see I'm storing it on my NAS that is mounted to the host /home/truenas
+      - /home/fics/truenas/Restic-Proxmox-Backup/tmp-for-restore:/tmp-for-restore #USE THIS FOLDER FOR RESTORE - CAN VIEW EACH CONTAINER
       - /home/ubuntu/docker:/mnt/volumes:ro
     security_opt:
       - no-new-privileges:true
@@ -31,20 +31,20 @@ services:
   prune:
     image: mazzolino/restic
     container_name: restic-prune
-    hostname: your_host_name
+    hostname: Portainer
     environment:
       RUN_ON_STARTUP: "true"
       PRUNE_CRON: "0 0 4 * * *"
       RESTIC_REPOSITORY: /restic
       RESTIC_PASSWORD: USE_SAME_PASSWORD_AS_ABOVE
-      TZ: Europe/London
+      TZ: Europe/Madrid
     security_opt:
       - no-new-privileges:true
 
   check:
     image: mazzolino/restic
     container_name: restic-check
-    hostname: your_host_name
+    hostname: Portainer
     environment:
       RUN_ON_STARTUP: "false"
       CHECK_CRON: "0 15 5 * * *"
