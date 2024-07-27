@@ -26,18 +26,18 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.traefik.entrypoints=http"
-      - "traefik.http.routers.traefik.rule=Host(`traefik-dashboard.yourdomain.co.uk`)"
+      - "traefik.http.routers.traefik.rule=Host(`traefik-dashboard.yourdomain.com`)"
       - "traefik.http.middlewares.traefik-auth.basicauth.users=YOUR_USERNAME_PASSWORD"
       - "traefik.http.middlewares.traefik-https-redirect.redirectscheme.scheme=https"
       - "traefik.http.middlewares.sslheader.headers.customrequestheaders.X-Forwarded-Proto=https"
       - "traefik.http.routers.traefik.middlewares=traefik-https-redirect"
       - "traefik.http.routers.traefik-secure.entrypoints=https"
-      - "traefik.http.routers.traefik-secure.rule=Host(`traefik-dashboard.yourdomain.co.uk`)"
+      - "traefik.http.routers.traefik-secure.rule=Host(`traefik-dashboard.yourdomain.com`)"
       - "traefik.http.routers.traefik-secure.middlewares=traefik-auth"
       - "traefik.http.routers.traefik-secure.tls=true"
       - "traefik.http.routers.traefik-secure.tls.certresolver=cloudflare"
-      - "traefik.http.routers.traefik-secure.tls.domains[0].main=yourdomain.co.uk"
-      - "traefik.http.routers.traefik-secure.tls.domains[0].sans=*.yourdomain.co.uk"
+      - "traefik.http.routers.traefik-secure.tls.domains[0].main=yourdomain.com"
+      - "traefik.http.routers.traefik-secure.tls.domains[0].sans=*.yourdomain.com"
       - "traefik.http.routers.traefik-secure.service=api@internal"
 
 
