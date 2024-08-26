@@ -1,0 +1,307 @@
+body {
+    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    color: #393e46;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-weight: 600;
+    color: #222831;
+    margin-bottom: 30px;
+}
+
+#calendarContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#calendar {
+    border: 1px solid #393e46;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #222831;
+}
+
+#todayMeetings {
+    background-color: #222831;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#todayMeetings h2 {
+    font-weight: 400;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+#todayMeetingsList {
+    list-style: none;
+    padding-left: 0;
+}
+
+#todayMeetingsList li {
+    padding: 10px;
+    background-color: #393e46;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+#todayMeetingsList li:hover {
+    background-color: #00adb5;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.fc-event {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #00adb5;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+}
+
+.fc-event:hover {
+    background-color: #008a92;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Calendar Header Style */
+.fc-toolbar {
+    margin-bottom: 20px;
+}
+
+.fc-button {
+    background-color: #00adb5;
+    border: none;
+    color: #ffffff;
+    margin: 0 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.fc-button:hover {
+    background-color: #008a92;
+    transition: background-color 0.3s ease;
+}
+
+.fc-button-primary {
+    background-color: #222831;
+    border: none;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.fc-button-primary:hover {
+    background-color: #393e46;
+    transition: background-color 0.3s ease;
+}
+
+.fc-button-group > .fc-button {
+    margin-right: 10px;
+}
+
+.fc .fc-toolbar-title {
+    font-size: 1.5em;
+    color: #222831;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Custom Scrollbar for Today's Meetings List */
+#todayMeetingsList {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+#todayMeetingsList::-webkit-scrollbar {
+    width: 10px;
+}
+
+#todayMeetingsList::-webkit-scrollbar-thumb {
+    background-color: #00adb5;
+    border-radius: 5px;
+}
+
+#todayMeetingsList::-webkit-scrollbar-thumb:hover {
+    background-color: #008a92;
+}
+
+#todayMeetingsList::-webkit-scrollbar-track {
+    background-color: #222831;
+    border-radius: 5px;
+}
+
+/* Today's meetings container */
+#todayMeetings {
+    background-color: #222831;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Event styling in the calendar */
+.fc-event {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #00adb5;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.color-swatch {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+/* Event hover effect */
+.fc-event:hover {
+    background-color: #008a92;
+}
+
+/* Style the day numbers */
+.fc-daygrid-day-number {
+    color: #222831 !important;  /* Apply the desired black color */
+    font-weight: 600;           /* Make the numbers a bit bolder */
+}
+
+/* Style the event names */
+.fc-event-title, .fc-event-time {
+    color: #222831 !important;  /* Apply the desired black color */
+    font-weight: 500;           /* Make the event titles slightly bold */
+}
+
+/* Remove the default link styling */
+.fc-event-title a, .fc-event-title a:hover {
+    color: #222831 !important;  /* Ensure the links within events are the same color */
+    text-decoration: none;
+}
+
+/* Optional: Style today's date differently if needed */
+.fc-day-today .fc-daygrid-day-number {
+    color: #222831 !important;  /* Keep the day number for today's date the same color */
+    background-color: #ffffff;  /* Optional: Background color for today */
+    border-radius: 50%;         /* Optional: Make the number appear within a circle */
+    padding: 2px;
+}
+
+/* Style the names of the days of the week */
+.fc-col-header-cell-cushion {
+    color: #222831 !important;  /* Apply the desired black color to the weekday names */
+    font-weight: 600;           /* Make the weekday names slightly bold for emphasis */
+}
+
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+    background-color: #393e46;
+    color: #ffffff;
+    border-bottom: none;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.modal-body {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.modal-footer {
+    background-color: #f9f9f9;
+    border-top: none;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #393e46;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#deleteButton {
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#deleteButton:hover {
+    background-color: #c0392b;
+}
+
+button[type="submit"] {
+    background-color: #00adb5;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #008a92;
+}
+
+button[type="button"] {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #cccccc;
+    border: none;
+}
+
+button[type="button"].close {
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+button[type="button"].close span {
+    color: white;
+    font-size: 24px;
+}
+
+
+/* Add any other custom styles you need below */
