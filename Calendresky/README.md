@@ -43,9 +43,14 @@ To run Calendresky locally, you'll need to have the following software installed
 
 ## Images
 ![](https://github.com/FictionFics/TheTechieJourney/blob/main/Calendresky/Screenshots/Photo1.png)
+---
 ![](https://github.com/FictionFics/TheTechieJourney/blob/main/Calendresky/Screenshots/Photo2.png)
+---
 ![](https://github.com/FictionFics/TheTechieJourney/blob/main/Calendresky/Screenshots/Photo3.png)
+---
 ![](https://github.com/FictionFics/TheTechieJourney/blob/main/Calendresky/Screenshots/Photo4.png)
+---
 ![](https://github.com/FictionFics/TheTechieJourney/blob/main/Calendresky/Screenshots/Photo5.png)
+---
 ![](https://github.com/FictionFics/TheTechieJourney/blob/main/Calendresky/Screenshots/Photo6.png)
 
