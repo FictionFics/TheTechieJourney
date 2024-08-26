@@ -10,6 +10,11 @@ Calendresky is a web-based calendar application that allows users to manage even
 - **Drag and Drop**: Events can be moved around the calendar by dragging and dropping.
 - **Resize Events**: Events can be resized to change their duration.
 - **View Today's Meetings**: A panel displaying all the meetings scheduled for the current day.
+- **Event Colors**: You can choose a color for you event to categorized as you want.
+
+## Future Enhancements
+- **Add recurring events functionality.**
+- **Implement user authentication and personalized event management.**
 
 ## Setup Instructions
 
@@ -35,3 +40,12 @@ To run Calendresky locally, you'll need to have the following software installed
    pip install Flask render_template request jsonify SQLAlchemy datetime
    python app.py
    ```
+
+## Images
+![](https://github.com/FictionFics/TheTechieJourney/blob/main/Calendresky/Screenshots/Photo1.png)
+![](https://github.com/FictionFics/TheTechieJourney/blob/main/Calendresky/Screenshots/Photo2.png)
+![](https://github.com/FictionFics/TheTechieJourney/blob/main/Calendresky/Screenshots/Photo3.png)
+![](https://github.com/FictionFics/TheTechieJourney/blob/main/Calendresky/Screenshots/Photo4.png)
+![](https://github.com/FictionFics/TheTechieJourney/blob/main/Calendresky/Screenshots/Photo5.png)
+![](https://github.com/FictionFics/TheTechieJourney/blob/main/Calendresky/Screenshots/Photo6.png)
+
