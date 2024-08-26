@@ -26,5 +26,12 @@ To run Calendresky locally, you'll need to have the following software installed
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-username/Calendresky.git
+   git clone https://github.com/FictionFics/TheTechieJourney.git
    cd Calendresky
+   ```
+2. **Install all the modules in your python environment**
+
+    ```bash
+   pip install Flask render_template request jsonify SQLAlchemy datetime
+   python app.py
+   ```
